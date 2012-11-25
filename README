@@ -13,6 +13,9 @@ bar key code will be send to the kernel and in turn to be received
 by terminals or X. This feature is very useful for people who suffer from
 RSI on thumb joint caused by repetitively hitting the space bar.
 
+This version works under Linux. It uses uinput kernel module to generate
+key stroke events.
+
 To use SoX-RSI, run
 sudo src/sox -d -t .wav --buffer 32 /dev/null
 
